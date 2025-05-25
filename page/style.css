@@ -1,0 +1,181 @@
+body {
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 0 5px #ccc;
+}
+
+th,
+td {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  word-wrap: break-word;
+}
+
+th {
+  background-color: #333;
+  color: white;
+}
+
+.match {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.no-match {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+h1 {
+  color: blue;
+}
+h2 {
+  color: #333;
+}
+
+/* Set widths for each column */
+td:nth-child(1),
+td:nth-child(3) {
+  width: 45%;
+}
+
+td:nth-child(2) {
+  width: 10%;
+  text-align: center;
+}
+
+/* match span */
+
+.mspan,
+.mgrp {
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+}
+
+.mspan {
+  background-color: #095302;
+  padding: 4px;
+  border-radius: 50%;
+  color: rgb(61, 255, 2);
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0 10px;
+}
+
+.mgrp {
+  background-color: #96b80256;
+  padding: 1px 5px;
+  border-radius: 8px;
+  color: rgb(255, 94, 0);
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0 10px;
+}
+
+.re {
+  color: #be15b6;
+  padding: 4px;
+}
+.red {
+  color: red;
+}
+
+pre {
+  white-space: pre-wrap; /* Preserve the spaces and line breaks */
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+
+/* Style for the tab background image - bigger and more obvious */
+.tab-background {
+  display: inline-block;
+  width: 35px;
+  height: 12px;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAMCAYAAAAkuj5RAAAAAXNSR0IArs4c6QAAAGFJREFUSMft1LsRQFAQheHPowAKoACx3IgEKtaEHujDjORSgWTH/ZOdnZOcM/sgk/kFFWY0qV8foQwS4MKBCS3qR6ixBJvElOobYAtivseIE120FaowJPN75GMu8j/LfMwNjh4HUpwg4LUAAAAASUVORK5CYII=")
+    no-repeat center;
+  background-size: 100% 100%;
+  vertical-align: middle;
+}
+
+/* Style for the space background image */
+.space-background {
+  display: inline-block;
+  width: 8px;
+  height: 10px;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAaUlEQVQoU2NkQAUyQK4EEPNAhb8A6RdA/ASmjBHKYAHSBkgK0cxhAGm8AMR/YBpM8CiGaQZpOgPSAHKGCrqROPh3QBqIMR1uC0iDA5Gmg5WRpYFkJ5HsaZDTiLEFHqwgDSRHHCygCCYNADkjFS0ZxPtRAAAAAElFTkSuQmCC")
+    no-repeat center;
+  background-size: contain;
+  margin: 0 1px;
+}
+.empty-background {
+  display: inline-block; /* Makes the element inline while still accepting styling */
+  width: auto; /* Very narrow to represent an "empty" space */
+  height: 15px; /* Full height of the container or line */
+  border-left: 2px dotted #ff00b3; /* Dotted vertical border */
+  margin: 0 2px;
+  line-height: 16px; /* Optional: adds spacing between elements */
+  vertical-align: middle;
+}
+
+.questionMarkQuantifier {
+  color: red;
+}
+.asteriskQuantifier {
+  color: goldenrod;
+}
+
+.plusQuantifier {
+  color: green;
+}
+
+.caretSign {
+  color: rgb(233, 118, 76);
+}
+.dollerSign {
+  color: rgb(146, 15, 26);
+}
+
+.pipeSign {
+  color: rgb(182, 111, 126);
+}
+
+/* Substitution-related styles */
+.replacement {
+  color: #0056b3;
+  padding: 4px;
+  font-weight: bold;
+}
+
+.replaced-part {
+  background-color: #ffecb3;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin: 0 2px;
+  border: 1px dashed #ff9800;
+}
+
+.replaced-item {
+  margin: 5px 0;
+}
+
+.match-index {
+  color: #616161;
+  font-size: 0.85em;
+  font-style: italic;
+}
+
+.green {
+  color: green;
+}
